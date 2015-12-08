@@ -35,9 +35,12 @@
                     <nav class="sidebar-nav" ng-controller="NavController" role="navigation">
                         <div id="sidebar-entries" class="list-group">
                         	<a class="list-group-item" ng-class="{active: matchesRoute('Clientes')}" href="#/Clientes" data-toggle="offcanvas">Clientes</a>
+                        	<a class="list-group-item" ng-class="{active: matchesRoute('ItemVendas')}" href="#/ItemVendas" data-toggle="offcanvas">ItemVendas</a>
                         	<a class="list-group-item" ng-class="{active: matchesRoute('Produtos')}" href="#/Produtos" data-toggle="offcanvas">Produtos</a>
                         	<a class="list-group-item" ng-class="{active: matchesRoute('Usuarios')}" href="#/Usuarios" data-toggle="offcanvas">Usuarios</a>
                         	<a class="list-group-item" ng-class="{active: matchesRoute('Vendas')}" href="#/Vendas" data-toggle="offcanvas">Vendas</a>
+                        	<a class="list-group-item" ng-class="{active: matchesRoute('categoria')}" href="#/categoria" data-toggle="offcanvas">categoria</a>
+                        	<a class="list-group-item" ng-class="{active: matchesRoute('formapagamentos')}" href="#/formapagamentos" data-toggle="offcanvas">formapagamentos</a>
                         </div>
                     </nav>
                 </div>
@@ -75,6 +78,10 @@
     <script src="scripts/controllers/newClienteController.js"></script>
     <script src="scripts/controllers/searchClienteController.js"></script>
     <script src="scripts/controllers/editClienteController.js"></script>
+    <script src="scripts/services/ItemVendaFactory.js"></script>
+    <script src="scripts/controllers/newItemVendaController.js"></script>
+    <script src="scripts/controllers/searchItemVendaController.js"></script>
+    <script src="scripts/controllers/editItemVendaController.js"></script>
     <script src="scripts/services/ProdutoFactory.js"></script>
     <script src="scripts/controllers/newProdutoController.js"></script>
     <script src="scripts/controllers/searchProdutoController.js"></script>
@@ -87,5 +94,13 @@
     <script src="scripts/controllers/newVendaController.js"></script>
     <script src="scripts/controllers/searchVendaController.js"></script>
     <script src="scripts/controllers/editVendaController.js"></script>
+    <script src="scripts/services/categoriaFactory.js"></script>
+    <script src="scripts/controllers/newcategoriaController.js"></script>
+    <script src="scripts/controllers/searchcategoriaController.js"></script>
+    <script src="scripts/controllers/editcategoriaController.js"></script>
+    <script src="scripts/services/formapagamentoFactory.js"></script>
+    <script src="scripts/controllers/newformapagamentoController.js"></script>
+    <script src="scripts/controllers/searchformapagamentoController.js"></script>
+    <script src="scripts/controllers/editformapagamentoController.js"></script>
 </body>
 </html>
